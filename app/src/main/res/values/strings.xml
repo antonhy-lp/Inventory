@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Control De Inventario</string>
+    <string name="hint_nombre">Nombre Del Producto:</string>
+    <string name="hint_telefono">Identificador:</string>
+    <string name="hint_correo_electronico">Cantidad:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+    <string name="Agregar">Agregar</string>
+</resources>
