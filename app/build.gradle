@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.example.prototipo01"
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    //librerias para el correo
+    implementation files('libs/activation.jar')
+    implementation files('libs/mail.jar')
+    implementation files('libs/additionnal.jar')
+    //librerias para el sacaner
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    //boton flotante
+    implementation 'io.github.yavski:fab-speed-dial:1.0.7'
+    implementation 'com.github.clans:fab:1.6.4'
+}
