@@ -19,7 +19,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class ActualizarProductos extends AppCompatActivity {
-    private Button btnScanner;
+    public Button btnScanner;
     String t;
     EditText campoDetalleProd,campoPrecio,campoCantidadMinima,campoCantidad,campoNombreProd,campoActualizarCodBarras;
     //
@@ -51,7 +51,7 @@ public class ActualizarProductos extends AppCompatActivity {
             case R.id.btnConsultar:
 
                 new IntentIntegrator(ActualizarProductos.this).initiateScan();
-                //consultarSql();
+                consultarSql();
 
                 break;
             case R.id.btnActualizarPais: actualizarUsuario();
